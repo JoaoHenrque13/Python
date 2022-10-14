@@ -1,0 +1,17 @@
+nome = str(input('Digite o nome do aluno: '))
+serie = str(input('Digite a série do aluno: '))
+i = 0; media = 0; soma = 0
+
+while i < 4:
+    nota = float(input('Digite uma nota: '))
+    soma = soma + nota
+    i += 1
+    
+media = soma / 4
+
+if media >= 6: 
+	resultado = 'Aprovado!'
+else: 
+	resultado = 'Reprovado!'
+
+print(f'O aluno {nome}, da série {serie}, está {resultado} Com a média {media}')
